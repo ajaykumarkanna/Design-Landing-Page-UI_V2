@@ -5,6 +5,8 @@
 
   export default defineConfig({
     plugins: [react()],
+    // Add this base property
+    base: './',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
