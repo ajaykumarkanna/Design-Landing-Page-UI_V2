@@ -146,11 +146,14 @@ export function SocialProofSection() {
             </div>
             <Button 
               size="lg" 
-              className="px-10 py-5 text-xl rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+              className="px-12 py-6 text-xl rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-0"
               style={{ 
                 backgroundColor: '#00BCD4',
                 fontFamily: 'Montserrat',
-                fontWeight: '600'
+                fontWeight: '600',
+                color: 'white',
+                height: 'auto',
+                minHeight: '56px'
               }}
             >
               Secure Your Spot

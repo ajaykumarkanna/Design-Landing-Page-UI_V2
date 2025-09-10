@@ -15,33 +15,37 @@ export function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             <button 
-              className="px-4 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50"
+              className="px-5 py-3 rounded-lg transition-all duration-200 hover:bg-gray-50 text-base"
               style={{ 
                 fontFamily: 'Montserrat', 
                 fontWeight: '500',
-                color: '#34495E'
+                color: '#34495E',
+                minHeight: '44px'
               }}
             >
               Features
             </button>
             <button 
-              className="px-4 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50"
+              className="px-5 py-3 rounded-lg transition-all duration-200 hover:bg-gray-50 text-base"
               style={{ 
                 fontFamily: 'Montserrat', 
                 fontWeight: '500',
-                color: '#34495E'
+                color: '#34495E',
+                minHeight: '44px'
               }}
             >
               Community
             </button>
             <Button 
-              className="px-6 py-3 rounded-lg transition-all duration-200 hover:scale-105"
+              className="px-8 py-3 rounded-lg transition-all duration-200 hover:scale-105 border-0 text-base"
               style={{ 
                 backgroundColor: '#00BCD4',
                 fontFamily: 'Montserrat',
-                fontWeight: '600'
+                fontWeight: '600',
+                color: 'white',
+                minHeight: '44px'
               }}
             >
               Join Waitlist

@@ -5,8 +5,8 @@
 
   export default defineConfig({
     plugins: [react()],
-    // Add this base property
-    base: './',
+    // Configure for GitHub Pages deployment
+    base: process.env.NODE_ENV === 'production' ? '/Design-Landing-Page-UI_V2/' : '/',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -54,7 +54,14 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
+      assetsDir: 'assets',
+      sourcemap: false,
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
     },
     server: {
       port: 3000,

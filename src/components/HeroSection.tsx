@@ -57,20 +57,23 @@ export function HeroSection() {
               The only Notion OS you'll ever need as a UX designer
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <Button 
                 size="lg" 
-                className="px-10 py-5 text-xl rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+                className="px-12 py-6 text-xl rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-0"
                 style={{ 
                   backgroundColor: '#00BCD4',
                   fontFamily: 'Montserrat',
-                  fontWeight: '600'
+                  fontWeight: '600',
+                  color: 'white',
+                  height: 'auto',
+                  minHeight: '56px'
                 }}
               >
                 Join the Waitlist
                 <ArrowRight className="w-5 h-5 ml-3" />
               </Button>
-              <p className="text-sm" style={{ fontFamily: 'Inter', color: '#34495E' }}>
+              <p className="text-sm text-center sm:text-left" style={{ fontFamily: 'Inter', color: '#34495E' }}>
                 🚀 <strong>2,847</strong> designers already joined
               </p>
             </div>
@@ -128,11 +131,14 @@ export function HeroSection() {
             </p>
             <Button 
               size="lg" 
-              className="px-8 py-4 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+              className="px-10 py-5 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-0"
               style={{ 
                 backgroundColor: '#2C3E50',
                 fontFamily: 'Montserrat',
-                fontWeight: '600'
+                fontWeight: '600',
+                color: 'white',
+                height: 'auto',
+                minHeight: '52px'
               }}
             >
               Get Early Access

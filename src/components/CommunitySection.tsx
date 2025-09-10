@@ -139,11 +139,14 @@ export function CommunitySection() {
             </p>
             <Button 
               size="lg" 
-              className="px-10 py-4 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
+              className="px-12 py-5 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg border-0"
               style={{ 
                 backgroundColor: '#00BCD4',
                 fontFamily: 'Montserrat',
-                fontWeight: '600'
+                fontWeight: '600',
+                color: 'white',
+                height: 'auto',
+                minHeight: '52px'
               }}
             >
               Join the Waitlist Now
