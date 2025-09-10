@@ -60,11 +60,19 @@
       rollupOptions: {
         output: {
           manualChunks: undefined,
+          assetFileNames: 'assets/[name]-[hash][extname]',
+          chunkFileNames: 'assets/[name]-[hash].js',
+          entryFileNames: 'assets/[name]-[hash].js',
         },
       },
     },
     server: {
       port: 3000,
       open: true,
+      host: true,
+    },
+    preview: {
+      port: 4173,
+      host: true,
     },
   });
