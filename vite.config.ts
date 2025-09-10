@@ -7,6 +7,7 @@
     plugins: [react()],
     // Configure for GitHub Pages deployment
     base: process.env.NODE_ENV === 'production' ? '/Design-Landing-Page-UI_V2/' : '/',
+    publicDir: 'public',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -57,6 +58,7 @@
       outDir: 'dist',
       assetsDir: 'assets',
       sourcemap: false,
+      minify: 'esbuild',
       rollupOptions: {
         output: {
           manualChunks: undefined,
@@ -64,7 +66,16 @@
           chunkFileNames: 'assets/[name]-[hash].js',
           entryFileNames: 'assets/[name]-[hash].js',
         },
+        external: [
+          // Exclude any chrome extension references
+          /^chrome-extension:/,
+          /^moz-extension:/,
+          /^webkit-extension:/,
+          /^safari-extension:/
+        ]
       },
+      cssCodeSplit: true,
+      reportCompressedSize: false,
     },
     server: {
       port: 3000,
